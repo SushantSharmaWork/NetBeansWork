@@ -3,12 +3,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-package ListInJava;
+package com.mycompany.collectioninjava.SetInJava;
 
 /**
  *
  * @author shubi
  */
-public class ArrList {
+public class LinkdHashSet {
 
 }
