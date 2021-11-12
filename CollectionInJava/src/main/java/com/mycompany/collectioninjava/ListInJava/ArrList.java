@@ -16,5 +16,6 @@ public class ArrList {
     ArraList.add(1);
     ArraList.add("Sushant");
     System.out.println(ArraList);
+    System.out.println("hi");
 }
 }
