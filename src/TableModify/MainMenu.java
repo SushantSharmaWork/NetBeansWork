@@ -17,9 +17,14 @@ import javax.swing.ImageIcon;
  *
  * @author shubi
  */
-public class MainMenu implements ActionListener{
+public class MainMenu implements MouseListener{
     
     Frame f = new Frame("Table Modification Software");
+    Button Plus = new Button("+");
+    Button Delete = new Button("-");
+    Button Update = new Button("Update");
+    Button Get = new Button("Get");
+    
     public MainMenu(){
     f.setSize(600,300);
     f.setBackground(Color.GRAY);
@@ -28,7 +33,6 @@ public class MainMenu implements ActionListener{
     f.setLayout(null);
     f.setVisible(true);
     
-    Button Plus = new Button("+");
     Plus.setBounds(100, 100, 150, 50);
     Plus.setBackground(Color.ORANGE);
     //Anonymous clas event
@@ -38,12 +42,11 @@ public class MainMenu implements ActionListener{
            Add AddID = new Add();
         }
     });
-        Plus.addMouseListener(this); 
-        f.add(Plus);
+    Plus.addMouseListener(this); 
+    f.add(Plus);
     
-    Button Delete = new Button("-");
     Delete.setBounds(300, 100, 150, 50);
-    Delete.setBackground(Color.MAGENTA);
+    Delete.setBackground(Color.ORANGE);
     Delete.addActionListener(new ActionListener(){
         @Override
         public void actionPerformed(ActionEvent e) {
@@ -53,7 +56,6 @@ public class MainMenu implements ActionListener{
     });
     f.add(Delete);
     
-    Button Update = new Button("Update");
     Update.setBounds(100, 200, 150, 50);
     Update.setBackground(Color.ORANGE);
     Update.addActionListener(new ActionListener(){
@@ -64,10 +66,9 @@ public class MainMenu implements ActionListener{
     
     });
     f.add(Update);
- 
-    Button Get = new Button("Get");
+
     Get.setBounds(300, 200, 150, 50);
-    Get.setBackground(Color.YELLOW);
+    Get.setBackground(Color.ORANGE);
     Get.addActionListener(new ActionListener(){
         @Override
         public void actionPerformed(ActionEvent e) {
@@ -76,15 +77,17 @@ public class MainMenu implements ActionListener{
     
     });
     f.add(Get);
-
     }
-    @Override
+ 
     public void actionPerformed(ActionEvent e) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
         public void mouseClicked(MouseEvent e) {
-           Plus.setBackground(Color.YELLOW);
+           Plus.setBackground(Color.BLUE);
+           Delete.setBackground(Color.BLUE);
+           Update.setBackground(Color.BLUE);
+           Get.setBackground(Color.BLUE);
         }
 
         public void mousePressed(MouseEvent e) {
@@ -96,11 +99,18 @@ public class MainMenu implements ActionListener{
         }
 
         public void mouseEntered(MouseEvent e) {
-         Plus.setBackground(Color.CYAN);
+           Plus.setBackground(Color.DARK_GRAY);
+           Delete.setBackground(Color.DARK_GRAY);
+           Update.setBackground(Color.DARK_GRAY);
+           Get.setBackground(Color.DARK_GRAY);
         }
 
-        public void mouseExited(MouseEvent e) {
-        Plus.setBackground(Color.YELLOW);        }
+        public void mouseExited(MouseEvent e) {     
+           Plus.setBackground(Color.YELLOW);
+           Delete.setBackground(Color.YELLOW);
+           Update.setBackground(Color.YELLOW);
+           Get.setBackground(Color.YELLOW);
+        }
     
 
     public static void main(String[] args) {

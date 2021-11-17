@@ -11,12 +11,15 @@ import java.awt.Label;
 import java.awt.TextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
 /**
  *
  * @author shubi
  */
-public class Get extends Frame {
+public class Get extends Frame implements MouseListener {
+    Button Get = new Button("Update");
     public Get(){
     setSize(800,800);
     setBackground(Color.GRAY);
@@ -27,13 +30,12 @@ public class Get extends Frame {
     ID.setBounds(150, 100, 400, 50);
     add(ID);
     
-    Button Get = new Button("Update");
     Get.setBounds(200, 200, 150, 50);
     Get.setBackground(Color.ORANGE);
     add(Get);
     
     Label deleted = new Label("Search was successfull");
-    deleted.setBounds(200, 250, 150, 50);
+    deleted.setBounds(200, 250, 200, 50);
     deleted.setVisible(false);
     add(deleted);
     
@@ -43,6 +45,31 @@ public class Get extends Frame {
         deleted.setVisible(true);
     }
     });
+    }
+
+    @Override
+    public void mouseClicked(MouseEvent e) {
+           Get.setBackground(Color.BLUE);
+    }
+
+    @Override
+    public void mousePressed(MouseEvent e) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void mouseReleased(MouseEvent e) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void mouseEntered(MouseEvent e) {
+           Get.setBackground(Color.DARK_GRAY);
+    }
+
+    @Override
+    public void mouseExited(MouseEvent e) {
+           Get.setBackground(Color.YELLOW);
     }
     
 }
