@@ -11,14 +11,16 @@ import java.awt.Label;
 import java.awt.TextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
 /**
  *
  * @author shubi
  */
-public class Delete extends Frame{
+public class Delete extends Frame implements MouseListener{
+    Button Delete = new Button("Delete");
     public Delete(){
-    
     setSize(800,800);
     setBackground(Color.GRAY);
     setLayout(null);
@@ -28,14 +30,14 @@ public class Delete extends Frame{
     ID.setBounds(150, 100, 400, 50);
     add(ID);
     
-    Button Delete = new Button("Delete");
+
     Delete.setBounds(200, 200, 150, 50);
     Delete.setBackground(Color.ORANGE);
     add(Delete);
 
 
     Label Success = new Label("Values Removed Successfully");
-    Success.setBounds(200, 250, 150, 50);
+    Success.setBounds(200, 250, 200, 50);
     Success.setVisible(false);
     add(Success);
       
@@ -46,5 +48,29 @@ public class Delete extends Frame{
         }
     });    
     
+    }
+
+    @Override
+    public void mouseClicked(MouseEvent e) {
+    Delete.setBackground(Color.BLUE);      }
+
+    @Override
+    public void mousePressed(MouseEvent e) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void mouseReleased(MouseEvent e) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void mouseEntered(MouseEvent e) {
+    Delete.setBackground(Color.DARK_GRAY);  
+    }
+
+    @Override
+    public void mouseExited(MouseEvent e) {
+    Delete.setBackground(Color.YELLOW);  
     }
 }
