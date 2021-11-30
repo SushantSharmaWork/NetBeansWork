@@ -19,18 +19,29 @@ import java.awt.event.MouseListener;
  * @author shubi
  */
 public class Update extends Frame implements MouseListener{
-        
+
     Button Update = new Button("Update");
+    Button back = new Button("Back");
+
     public Update(){
-    setSize(800,800);
+    setSize(600,350);
     setBackground(Color.GRAY);
     setLayout(null);
     setVisible(true);
-    
+    setTitle("Update");
     TextField ID = new TextField();
     ID.setBounds(150, 100, 400, 50);
     add(ID);
-
+    
+    back.setBounds(50, 50, 70, 40);
+    back.setBackground(Color.ORANGE);
+    add(back);
+    back.addActionListener(new ActionListener(){
+        @Override
+        public void actionPerformed(ActionEvent e) {
+             new MainMenu();
+        }
+    });
     Update.setBounds(200, 200, 150, 50);
     Update.setBackground(Color.ORANGE);
     add(Update);

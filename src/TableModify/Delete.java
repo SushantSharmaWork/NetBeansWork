@@ -20,12 +20,13 @@ import java.awt.event.MouseListener;
  */
 public class Delete extends Frame implements MouseListener{
     Button Delete = new Button("Delete");
+    Button back = new Button("Back");
     public Delete(){
-    setSize(800,800);
+    setSize(600,350);
     setBackground(Color.GRAY);
     setLayout(null);
     setVisible(true);
-    
+    setTitle("Delete");
     TextField ID = new TextField();
     ID.setBounds(150, 100, 400, 50);
     add(ID);
@@ -34,7 +35,16 @@ public class Delete extends Frame implements MouseListener{
     Delete.setBounds(200, 200, 150, 50);
     Delete.setBackground(Color.ORANGE);
     add(Delete);
-
+    
+    back.setBounds(50, 50, 70, 40);
+    back.setBackground(Color.ORANGE);
+    add(back);
+    back.addActionListener(new ActionListener(){
+        @Override
+        public void actionPerformed(ActionEvent e) {
+             new MainMenu();
+        }
+    });
 
     Label Success = new Label("Values Removed Successfully");
     Success.setBounds(200, 250, 200, 50);

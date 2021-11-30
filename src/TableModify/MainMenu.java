@@ -7,6 +7,7 @@ package TableModify;
 import java.awt.Button;
 import java.awt.Color;
 import java.awt.Frame;
+import java.awt.Panel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
@@ -20,7 +21,7 @@ import javax.swing.ImageIcon;
 public class MainMenu implements MouseListener{
     
     Frame f = new Frame("Table Modification Software");
-    Button Plus = new Button("+");
+    Button Add = new Button("+");
     Button Delete = new Button("-");
     Button Update = new Button("Update");
     Button Get = new Button("Get");
@@ -33,87 +34,189 @@ public class MainMenu implements MouseListener{
     f.setLayout(null);
     f.setVisible(true);
     
-    Plus.setBounds(100, 100, 150, 50);
-    Plus.setBackground(Color.ORANGE);
-    //Anonymous clas event
-    Plus.addActionListener(new ActionListener() {
+    Panel panel=new Panel();  
+    panel.setBounds(100,100,150,50);    
+    panel.setBackground(Color.ORANGE);  
+    Add.setBounds(100, 100, 150, 50);
+    Add.setBackground(Color.ORANGE);
+
+        Add.addMouseListener(new MouseListener() {
         @Override
-        public void actionPerformed(ActionEvent e) {
-           Add AddID = new Add();
+        public void mouseClicked(MouseEvent e) {
+            Add.setBackground(Color.BLUE);
+            new Add();
+            f.dispose(); 
         }
-    });
-    Plus.addMouseListener(this); 
-    f.add(Plus);
-    
+
+        @Override
+        public void mousePressed(MouseEvent e) {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        @Override
+        public void mouseReleased(MouseEvent e) {
+           
+        }
+
+        @Override
+        public void mouseEntered(MouseEvent e) {
+        Add.setBackground(Color.LIGHT_GRAY);        }
+
+        @Override
+        public void mouseExited(MouseEvent e) {
+        Add.setBackground(Color.ORANGE);
+        }
+    }); 
+    f.add(Add);
+    f.add(panel);
     Delete.setBounds(300, 100, 150, 50);
     Delete.setBackground(Color.ORANGE);
-    Delete.addActionListener(new ActionListener(){
+       Delete.addMouseListener(new MouseListener() {
         @Override
-        public void actionPerformed(ActionEvent e) {
-            Delete RemoveID =new Delete();
+        public void mouseClicked(MouseEvent e) {
+            Delete.setBackground(Color.BLUE);
+            new Delete();
+            f.dispose(); 
         }
-    
-    });
+
+        @Override
+        public void mousePressed(MouseEvent e) {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        @Override
+        public void mouseReleased(MouseEvent e) {
+        f.setVisible(false); 
+        }
+
+        @Override
+        public void mouseEntered(MouseEvent e) {
+        Delete.setBackground(Color.LIGHT_GRAY);        }
+
+        @Override
+        public void mouseExited(MouseEvent e) {
+        Delete.setBackground(Color.ORANGE);
+        }
+    }); 
     f.add(Delete);
     
     Update.setBounds(100, 200, 150, 50);
     Update.setBackground(Color.ORANGE);
-    Update.addActionListener(new ActionListener(){
+       Update.addMouseListener(new MouseListener() {
         @Override
-        public void actionPerformed(ActionEvent e) {
-            Update RemoveID =new Update();
+        public void mouseClicked(MouseEvent e) {
+            Update.setBackground(Color.BLUE);
+            new Update();
+            f.dispose(); 
         }
-    
-    });
+
+        @Override
+        public void mousePressed(MouseEvent e) {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        @Override
+        public void mouseReleased(MouseEvent e) {
+        f.setVisible(false);     
+        }
+
+        @Override
+        public void mouseEntered(MouseEvent e) {
+        Update.setBackground(Color.LIGHT_GRAY);        }
+
+        @Override
+        public void mouseExited(MouseEvent e) {
+        Update.setBackground(Color.ORANGE);
+        }
+    }); 
     f.add(Update);
 
     Get.setBounds(300, 200, 150, 50);
     Get.setBackground(Color.ORANGE);
-    Get.addActionListener(new ActionListener(){
+       Get.addMouseListener(new MouseListener() {
         @Override
-        public void actionPerformed(ActionEvent e) {
-            Get RemoveID =new Get();
+        public void mouseClicked(MouseEvent e) {
+            Get.setBackground(Color.BLUE);
+            new Get();
+            f.dispose(); 
         }
+
+        @Override
+        public void mousePressed(MouseEvent e) {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        @Override
+        public void mouseReleased(MouseEvent e) {
+        f.setVisible(false);  
+        }
+
+        @Override
+        public void mouseEntered(MouseEvent e) {
+        Get.setBackground(Color.LIGHT_GRAY);        }
+
+        @Override
+        public void mouseExited(MouseEvent e) {
+        Get.setBackground(Color.ORANGE);
+        }
+    }); 
+       f.add(Get);
     
+    Update.setBounds(100, 200, 150, 50);
+    Update.setBackground(Color.ORANGE);
+       Update.addMouseListener(new MouseListener() {
+        @Override
+        public void mouseClicked(MouseEvent e) {
+            Update.setBackground(Color.BLUE);
+            new Update();
+            f.dispose(); 
+        }
+        @Override
+        public void mousePressed(MouseEvent e) {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        @Override
+        public void mouseReleased(MouseEvent e) {
+           // f.setVisible(false);
+        }
+
+        @Override
+        public void mouseEntered(MouseEvent e) {
+        Update.setBackground(Color.LIGHT_GRAY);        }
+
+        @Override
+        public void mouseExited(MouseEvent e) {
+        Update.setBackground(Color.ORANGE);
+        }
     });
-    f.add(Get);
+    f.add(Update);
     }
  
-    public void actionPerformed(ActionEvent e) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
-        public void mouseClicked(MouseEvent e) {
-           Plus.setBackground(Color.BLUE);
-           Delete.setBackground(Color.BLUE);
-           Update.setBackground(Color.BLUE);
-           Get.setBackground(Color.BLUE);
-        }
-
-        public void mousePressed(MouseEvent e) {
-           // throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        }
-
-        public void mouseReleased(MouseEvent e) {
-            //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-        }
-
-        public void mouseEntered(MouseEvent e) {
-           Plus.setBackground(Color.DARK_GRAY);
-           Delete.setBackground(Color.DARK_GRAY);
-           Update.setBackground(Color.DARK_GRAY);
-           Get.setBackground(Color.DARK_GRAY);
-        }
-
-        public void mouseExited(MouseEvent e) {     
-           Plus.setBackground(Color.YELLOW);
-           Delete.setBackground(Color.YELLOW);
-           Update.setBackground(Color.YELLOW);
-           Get.setBackground(Color.YELLOW);
-        }
-    
-
     public static void main(String[] args) {
         new MainMenu();
+    }
+
+    @Override
+    public void mouseClicked(MouseEvent e) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void mousePressed(MouseEvent e) {
+    }
+
+    @Override
+    public void mouseReleased(MouseEvent e) {
+  }
+
+    @Override
+    public void mouseEntered(MouseEvent e) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @ Override
+    public void mouseExited(MouseEvent e) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
