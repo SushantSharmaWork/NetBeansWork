@@ -18,38 +18,42 @@ import java.awt.event.WindowEvent;
 public class MoveButtonOnKey extends Frame{
         int x = 0;
         int y = 350;
+        boolean reverse = false;
     public MoveButtonOnKey(){
         setTitle("Bucket Game Basket");
         setSize(400, 400);
         setLayout(null);        
         Button Bucket = new Button("");
-       // Bucket.setBounds(100,100,100,100);
+        Bucket.setBounds(x, y, 40, 30);
         Bucket.addKeyListener(new KeyListener(){
             @Override
             public void keyTyped(KeyEvent e) {
-
             }
 
             @Override
             public void keyPressed(KeyEvent e) {
-
                 
-                if (x >= 360){
+                switch (e.getKeyCode()){
+                case KeyEvent.VK_LEFT :
+                {
                 x = x-10;
+                y = y;
+                System.out.println(x);
+                while(x >0){
+                Bucket.setBounds(x, y, 40, 30);
+                }} break;
+                
+                case KeyEvent.VK_RIGHT : {
+                x = x+10;
                 y = y;  
                 System.out.println(x);
+                if(x< 360){
                 Bucket.setBounds(x, y, 40, 30);
                 }
-                else
-                {
-                x = x+10;
-                y = y;
-                System.out.println(x);                
-                Bucket.setBounds(x, y, 40, 30);
-                }
+                }break;
             }
-
-            @Override
+        }
+        @Override
             public void keyReleased(KeyEvent e) {
             }
         });
