@@ -42,10 +42,12 @@ java is an object oriented programming language that was developed by James Gosl
 SUN:- Stanford University Network
 =>object-oriented:- bc it uses object and class with the help of these concept we can implement any real world pro
 =>Object :- is a real world entity which consists of state and behavior.
-State reprsent value of an object
+
+State  reprsent value of an object
 Ex:- pen is an object
 name and color reprsent value of an object (state)
 behavior reprsent functionality of an object
+
 Ex:- writting something with pen
 => object contains properties (variables) and behavior(function / method)=>class:- is a logical thing or blue print but not physically exists.
 class student
@@ -55,13 +57,8 @@ flower
 rose, marry gold is an object of class flower
 furniture
 table chair is an object of class furniture
-13(91931) OneDrive\Desktop\Dero.java-Notepad•
-Search
 View Encoding Language Settings Macro Run Plugins
-Window
-arresca?
-GREa
-23 E Demo java 83 Ba Student
+
 public static void main(String[] args)
 Q1. WHY MAin method delcared as public
 And:- to call main) from every where by JVM so main is delcared as public
@@ -73,7 +70,7 @@ q3.
 it doesn't return any types so-
 =>String[] args:- it will take command line argument
 =>String:- it wil take any type of data
-I
+
 =>args is a String type variable
 public static void main(String[] args)
 - (String [largs)
@@ -81,7 +78,6 @@ public static void main(String[] args)
 -(String[] thinknext)
 - (String[] t)
 --(String..
--. args)l
 
 
 
