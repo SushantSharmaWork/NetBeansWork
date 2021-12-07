@@ -45,9 +45,9 @@ public static void main(String[] args)
 ----------------------------------------
 This keyword:
 
-1/2. this n used be refer current das instance method
+this n used be refer current das instance method
 3. tha can be passed as an argument in the method alin
-lass Dera
+class Dera
 I
 vold mI0)
 thisn/o (l, 'aman li
