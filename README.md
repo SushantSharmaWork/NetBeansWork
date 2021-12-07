@@ -38,7 +38,7 @@ it doesn't return any types so-
 =>args is a String type variable
 public static void main(String[] args)
 - (String [largs)
--(String args!])
+- (String args!])
 -(String[] thinknext)
 - (String[] t)
 
@@ -48,22 +48,22 @@ This keyword:
 * this is used to refer current class instance method
 * this can be passed as an argument in the method alin
 class Demo
-
-vold mI0)
-thisn/o (l, 'aman li
-System.our-pen.th (Dello"));
+{
+vold m1()
+this.info(l, 'aman');
+System.out.println ("hello"));
 vod add (nt ant b)
 (
-int cza•b;
-Systom.outpontn(c):
-chismi0):
+int c= a•b;
+Systom.out.println(c):
+this.m1();
 )
 void info (nt if,Sting name)
-System.out.pmon(d+* *• name),
+System.out.println(id+* *• name),
 )
-puble st bE void man (Strng[] args)
-Demo d= new Demo 0):
-dadd(23,12):
+public static void main (String[] args)
+Demo d= new Demo ():
+d.add(23,12):
 }
 ------------------------------------------------
 
