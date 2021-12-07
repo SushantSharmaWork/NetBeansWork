@@ -45,21 +45,20 @@ public static void main(String[] args)
 ----------------------------------------
 This keyword:
 
-this n used be refer current das instance method
-3. tha can be passed as an argument in the method alin
-class Dera
-I
+* this is used to refer current class instance method
+* this can be passed as an argument in the method alin
+class Demo
+
 vold mI0)
 thisn/o (l, 'aman li
-System.our-pen.th (Dello"))
-›
+System.our-pen.th (Dello"));
 vod add (nt ant b)
 (
 int cza•b;
 Systom.outpontn(c):
 chismi0):
 )
-vad info (nt if,Sting name)
+void info (nt if,Sting name)
 System.out.pmon(d+* *• name),
 )
 puble st bE void man (Strng[] args)
