@@ -4,16 +4,16 @@
 
 java is an object oriented programming language that was developed by James Gosling At SUN Micro-System.
 SUN:- Stanford University Network
-=>object-oriented:- bc it uses object and class with the help of these concept we can implement any real world pro
-=>Object :- is a real world entity which consists of state and behavior.
+ =>object-oriented:- bc it uses object and class with the help of these concept we can implement any real world pro
+ =>Object :- is a real world entity which consists of state and behavior.
 
 State  reprsent value of an object
 Ex:- pen is an object
 name and color reprsent value of an object (state)
 behavior reprsent functionality of an object
 
-Ex:- writting something with pen
-=> object contains properties (variables) and behavior(function / method)=>class:- is a logical thing or blue print but not physically exists.
+Ex:- writing something with pen
+ =>object contains properties (variables) and behavior(function / method)=>class:- is a logical thing or blue print but not physically exists.
 class student
 {
 }
@@ -26,15 +26,12 @@ View Encoding Language Settings Macro Run Plugins
 public static void main(String[] args)
 Q1. WHY MAin method delcared as public
 And:- to call main) from every where by JVM so main is delcared as public
-Q2.
--static
+Q2. -static
 Ans:- to call main() method without creating any object by IVm so ..
-q3.
--void
-it doesn't return any types so-
+Q3. -void
+It doesn't return any types so-
 =>String[] args:- it will take command line argument
 =>String:- it wil take any type of data
-
 =>args is a String type variable
 public static void main(String[] args)
 - (String [largs)
