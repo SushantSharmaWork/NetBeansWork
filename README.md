@@ -35,15 +35,16 @@ It doesn't return any types so-
 =>args is a String type variable
 public static void main(String[] args)
 - (String [largs)
-- (String args!])
+- (String args[])
 -(String[] thinknext)
 - (String[] t)
 
-----------------------------------------
+--------------------------------------------------------------------------------
 This keyword:
 
 * this is used to refer current class instance method
 * this can be passed as an argument in the method alin
+```
 class Demo
 {
 vold m1()
@@ -62,8 +63,9 @@ public static void main (String[] args)
 Demo d= new Demo ():
 d.add(23,12):
 }
+```
 ------------------------------------------------
-
+```
 Class Student
 I/instance varable
 int rol;
@@ -87,7 +89,7 @@ public stabe void main (Strng() arge)
 (
 Student s1-pew Student(I, aman",2),1200 551)
 Student s2= new Student (s1):
-
+```
 --------------------------------------------------
 
 Database in AWT:
