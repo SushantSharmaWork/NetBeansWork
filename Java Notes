@@ -2,12 +2,12 @@
 
 ----------------------------------------------------------------------------------------------------------------
 
-## java
+## Java
 Java is an object oriented programming language that was developed by James Gosling At SUN Micro-System.
 SUN:- Stanford University Network
 
  **class:**- is a logical thing or blue print but not physically exists.
-- **object-oriented**:- bc it uses object and class with the help of these concept we can implement any real world project. Object contains properties (variables) and behavior(function / method).
+- **Object-oriented**:- bc it uses object and class with the help of these concept we can implement any real world project. Object contains properties (variables) and behavior(function / method).
 - **Object** :- is a real world entity which consists of state and behavior.
                - State  reprsent value of an object
                  Ex:- pen is an object. Name and color reprsent value of an object (state)
