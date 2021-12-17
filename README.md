@@ -2,7 +2,7 @@
 
 ----------------------------------------------------------------------------------------------------------------
 
-##java
+## java
 Java is an object oriented programming language that was developed by James Gosling At SUN Micro-System.
 SUN:- Stanford University Network
 
@@ -40,7 +40,7 @@ public static void main(String[] args)
 - (String[] t)
 ```
 --------------------------------------------------------------------------------
-##This keyword:
+## This keyword:
 
 - this is used to refer current class instance method
 - this can be passed as an argument in the method alin
@@ -92,9 +92,9 @@ Student s2= new Student (s1):
 ```
 --------------------------------------------------
 
-#Database in AWT:
-##**How to connect database**
-##Step 1:- Load the Driver:
+# Database in AWT:
+## **How to connect database**
+## Step 1:- Load the Driver:
 ```
 Class.forName("com.mysql.jdbc.Driver*);
 ```
@@ -103,7 +103,7 @@ Class.forName("com.mysql.jdbc.Driver*);
 - com.mysql.jdbc.Driver is Driver implementation path
 - Driver is a class/interface
 
-##Step 2:- Established Connection
+## Step 2:- Established Connection
 ```
 Connection cn=DriverManager-getConnection("jdbc:mysql://localhost:3306/databasename®,"username",*password*);
 ```
@@ -115,7 +115,7 @@ Connection cn=DriverManager-getConnection("jdbc:mysql://localhost:3306/databasen
 - localhost is a local server
 - 3306 is a port number
 
-##Step 3:- create Statement
+## Step 3:- create Statement
 ```
 Statement s=cn.createStatement();
 OR
@@ -128,7 +128,7 @@ with the help of Statement interface we can't do this
 
 - Statement interface compile each and every time where PreparedStatement compile only once.
 
-##Step 4:- Execute Query
+## Step 4:- Execute Query
 -  if u want to insert/update/delete record in database
 ```
 int ¡=p.executeUpdate ();
@@ -136,7 +136,7 @@ int ¡=p.executeUpdate ();
 - if u want to get/reteive/fetch record from the database
 ```ResultSetr=p.executeQuery();```
 - ResultSet is an interface
-##Step 5:- close connection
+## Step 5:- close connection
 ```En.close ();```
 
 
