@@ -26,11 +26,11 @@ Methods:-
 a universal cursor bez it is applicable only List interface classes like ArrayList,LinkedList,Vector and Stack
 Methods:-
 Forward direction
-1. ```pùblic boolean hasNext()
-2. ```public object next()
+1. ```pùblic boolean hasNext()```
+2. ```public object next()```
 Backward Direction
-3. ```public boolean hasPrevious®)
-4. ```public object previous )
+3. ```public boolean hasPrevious)```
+4. ```public object previous )```
 
 *3. Enumeration:*- is a legacy class(old class) present in JDK 1.2 which is used to retrieve the object from the collection only forward direction.
  applicable only in vector and stack.
