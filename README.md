@@ -2,18 +2,18 @@
 
 ----------------------------------------------------------------------------------------------------------------
 
-java is an object oriented programming language that was developed by James Gosling At SUN Micro-System.
+##java
+Java is an object oriented programming language that was developed by James Gosling At SUN Micro-System.
 SUN:- Stanford University Network
- =>object-oriented:- bc it uses object and class with the help of these concept we can implement any real world pro
- =>Object :- is a real world entity which consists of state and behavior.
 
-State  reprsent value of an object
-Ex:- pen is an object
-name and color reprsent value of an object (state)
-behavior reprsent functionality of an object
-
-Ex:- writing something with pen
- =>object contains properties (variables) and behavior(function / method)=>class:- is a logical thing or blue print but not physically exists.
+ **class:**- is a logical thing or blue print but not physically exists.
+- **object-oriented**:- bc it uses object and class with the help of these concept we can implement any real world project. Object contains properties (variables) and behavior(function / method).
+- **Object** :- is a real world entity which consists of state and behavior.
+               - State  reprsent value of an object
+                 Ex:- pen is an object. Name and color reprsent value of an object (state)
+               - Behavior reprsent functionality of an object
+                 Ex:- writing something with pen
+```
 class student
 {
 }
@@ -38,12 +38,12 @@ public static void main(String[] args)
 - (String args[])
 -(String[] thinknext)
 - (String[] t)
-
+```
 --------------------------------------------------------------------------------
-This keyword:
+##This keyword:
 
-* this is used to refer current class instance method
-* this can be passed as an argument in the method alin
+- this is used to refer current class instance method
+- this can be passed as an argument in the method alin
 ```
 class Demo
 {
@@ -92,48 +92,52 @@ Student s2= new Student (s1):
 ```
 --------------------------------------------------
 
-Database in AWT:
-=>How to connect database
-step 1:- Load the Driver
-I
+#Database in AWT:
+##**How to connect database**
+##Step 1:- Load the Driver:
+```
 Class.forName("com.mysql.jdbc.Driver*);
-O 0
-* Class is a also class
-* forName () is a predefined methof of Driver class
-* com.mysql.jdbc.Driver is Driver implementation path
-* Driver is a class/interface
-WN
-step 2:- Established Connection
+```
+- Class is a also class
+- forName () is a predefined methof of Driver class
+- com.mysql.jdbc.Driver is Driver implementation path
+- Driver is a class/interface
+
+##Step 2:- Established Connection
+```
 Connection cn=DriverManager-getConnection("jdbc:mysql://localhost:3306/databasename®,"username",*password*);
+```
+- Connection is a predefined interface
+- DriverManager is predefined class
+- getConnection() is a predefined method of Connection interface
+- jdbc is a API
+- mysql is a database
+- localhost is a local server
+- 3306 is a port number
 
-* Connection is a predefined interface
-* DriverManager is predefined class
-* getConnection() is a predefined method of Connection interface
-* jdbc is a API
-* mysql is a database
-* localhost is a local server
-* 3306 is a port number
-
-step 3:- create Statement
-
+##Step 3:- create Statement
+```
 Statement s=cn.createStatement();
 OR
 PreparedStatementp=cn.prepareStatement();
-* Statement and PreparedStatement is a predefined interface
+```
+- Statement and PreparedStatement is a predefined interface
 
-* if u want to store image and file in database then must be use PreparedStatement 
+- if u want to store image and file in database then must be use PreparedStatement 
 with the help of Statement interface we can't do this
 
-* Statement interface compile each and every time where PreparedStatement compile only once.
+- Statement interface compile each and every time where PreparedStatement compile only once.
 
-step 4:- Execute Query
-* if u want to insert/update/delete record in database
+##Step 4:- Execute Query
+-  if u want to insert/update/delete record in database
+```
 int ¡=p.executeUpdate ();
-* if u want to get/reteive/fetch record from the database
-ResultSetr=p.executeQuery();
-* ResultSet is an interface
-step 5:- close connection
-En.close ();
+```
+- if u want to get/reteive/fetch record from the database
+```ResultSetr=p.executeQuery();```
+- ResultSet is an interface
+##Step 5:- close connection
+```En.close ();```
 
 
  
