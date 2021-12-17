@@ -93,7 +93,6 @@ Student s2= new Student (s1):
 --------------------------------------------------
 
 # Database in AWT:
-## **How to connect database**
 ## Step 1:- Load the Driver:
 ```
 Class.forName("com.mysql.jdbc.Driver*);
@@ -131,13 +130,17 @@ with the help of Statement interface we can't do this
 ## Step 4:- Execute Query
 -  if u want to insert/update/delete record in database
 ```
-int ¡=p.executeUpdate ();
+int i=p.executeUpdate ();
 ```
 - if u want to get/reteive/fetch record from the database
-```ResultSetr=p.executeQuery();```
+```
+ResultSetr=p.executeQuery();
+```
 - ResultSet is an interface
 ## Step 5:- close connection
-```En.close ();```
+```
+En.close ();
+```
 
 
  
