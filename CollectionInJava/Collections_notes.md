@@ -35,5 +35,5 @@ Backward Direction
 *3. Enumeration:*- is a legacy class(old class) present in JDK 1.2 which is used to retrieve the object from the collection only forward direction.
  applicable only in vector and stack.
 1. ```public boolean hasMoreElement()```
-2. ````public object nextElement```
+2. ```public object nextElement```
 4. ```for each loop```
