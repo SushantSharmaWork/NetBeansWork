@@ -1,5 +1,5 @@
 
-package JDBCandDatabase;
+package NewSir;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
