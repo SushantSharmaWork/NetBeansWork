@@ -20,6 +20,9 @@ public class ArrList {
         stu.add(6);
         //Normal print
         System.out.println("Printing with sout "+stu);
+        //removing value in arraylist
+        stu.remove(3);
+        System.out.println("After removing value from index "+stu);
         //using iterator
         Iterator itr = stu.iterator();
         while(itr.hasNext()){
