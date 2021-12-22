@@ -5,9 +5,12 @@
 package CollInJava;
 
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
 
 /**
- *
+ *```````````````
  * @author shubi
  */
 public class HashMp {
@@ -17,30 +20,8 @@ public class HashMp {
         hm.put(2, "fri");
         hm.put(3, "mon");
         hm.put(4, "wed");
-        System.out.println(hm
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-           );
+        System.out.println(hm);
+        Set<Map.Entry<Integer,String>> s = hm.entrySet(); //HashMap to set conversion
+        Iterator itr = s.iterator();
     }
-   
 }
