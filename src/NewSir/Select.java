@@ -15,7 +15,7 @@ import java.sql.Statement;
  * @author shubi
  */
 public class Select {
-            public static void main(String[] args) throws Exception {
+       public static void main(String[] args) throws Exception {
        Class.forName("com.mysql.jdbc.Driver");
        Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/cu","root","root");
        PreparedStatement ps = con.prepareStatement("select * from student");
@@ -28,7 +28,6 @@ public class Select {
        String a=rs.getString("address");
        
            System.out.println(r+" "+n+" "+c+" "+e+" "+a);
-           
        }  
        }
 }

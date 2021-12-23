@@ -10,7 +10,7 @@ import java.util.PriorityQueue;
  *
  * @author shubi
  */
-public class Priodeq {
+public class Prioque {
     public static void main(String[] args) {
     PriorityQueue<Integer> pq = new PriorityQueue<>();
     pq.add(7);
