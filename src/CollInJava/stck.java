@@ -4,6 +4,7 @@
  */
 package CollInJava;
 
+import java.util.Enumeration;
 import java.util.Stack;
 
 /**
@@ -20,5 +21,10 @@ public class stck {
         st.pop();
         System.out.println(st);
         System.out.println(st.peek());
+        Enumeration e = st.elements();
+        while(e.hasMoreElements()){
+            System.out.println(e.nextElement());
+        }
+        
     }
 }

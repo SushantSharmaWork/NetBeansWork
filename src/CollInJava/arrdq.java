@@ -17,6 +17,7 @@ public class arrdq {
     ad.add(2);
     ad.add(9);
     ad.add(7);
+    //We can add and remove first or last element
     ad.addFirst(4);
     ad.addLast(1);
     System.out.println(ad);
